@@ -8,7 +8,7 @@ if $_POST[]
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distro Wiki</title>
-    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="fontello.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,22 +17,37 @@ if $_POST[]
         <a href="./search">Search</a>
         <a href="./donate">Donate</a>
     </nav>
-    <form id="search" method="post">
+    <form id="search" action="search.php" method="get">
         <ul><span class="gray">Tags</span></ul>
         <ul>
             <li>Windows-like</li>
             <li>Mac-like</li>
-            <li>Nvidia support</li>
-            <li>Games-focused</li>
+            <li>Nvidia Support</li>
+            <li>Games Focused</li>
             <li>Tinkering</li>
             <li>No terminal</li>
             <li>Beginner-friendly</li>
             <li>Customizable</li>
+            <li>Enterprise</li>
+            <li>Home PC</li>
+            <li>Rolling Release</li>
+            <li>Big Comunity</li>
+            <li>Stable</li>
+            <li>Experimental</li>
+            <li>Preconfigured</li>
+            <li>Minimal</li>
+            <li>Lightweight</li>
+            <li>Server-ready</li>
+            <li>ARM Support</li>
+            <li>Unique UI</li>
+            <li>For devs</li>
+            <li>Privacy-focused</li>
+            <li>Media Creation</li>
         </ul>
         <button id="search-submit">Search</button>
     </form>
     <main>
-        <h2>Distro Wiki</h2>
+        <h1>Distro Wiki</h1>
         <p>
             I've always hated how disconnected all linux distros
             are. If you are a new user, you find yourself watching
@@ -43,7 +58,7 @@ if $_POST[]
             description.
         </p>
 
-        <h3>What is a distro?</h3>
+        <h2>What is a distro?</h2>
         <p>
             Think of a distro as a "version" of linux. It's a
             set of pre-set packages and settings that you can

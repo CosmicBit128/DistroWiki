@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+
+  text-decoration: inherit;
+  margin-right: .2em;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross:before { content: '\e800'; margin-left: 6px; }
+.icon-help:before { content: '\e801'; }
