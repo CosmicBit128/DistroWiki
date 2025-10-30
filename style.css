@@ -27,20 +27,17 @@ nav > a:hover {
     background: #00000010;
 }
 
-#search > div {
+form > ul:first-child {
     padding: 6px;
     width: calc(100% - 80px);
     margin: 16px 32px 0 32px;
     border: 2px solid black;
     border-bottom: none;
     border-radius: 8px 8px 0 0;
+    min-height: 44px;
 }
 
-#search > ul > h4 {
-    margin: 8px;
-}
-
-#search > ul {
+form > ul:nth-child(2) {
     padding: 6px;
     width: calc(100% - 80px);
     margin: 0 32px;
@@ -48,7 +45,7 @@ nav > a:hover {
     border-radius: 0 0 8px 8px;
 }
 
-#search > ul > li {
+form > ul > li {
     display: inline-block;
     background: var(--bg3);
     padding: 4px 8px;
@@ -61,4 +58,10 @@ nav > a:hover {
 
 main {
     padding: 32px;
+}
+
+.gray {
+    display: block;
+    color: #606060;
+    margin: 11px 16px;
 }

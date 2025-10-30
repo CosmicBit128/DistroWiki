@@ -1,9 +1,14 @@
+<?php
+if $_POST[]
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distro Wiki</title>
+    <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +17,9 @@
         <a href="./search">Search</a>
         <a href="./donate">Donate</a>
     </nav>
-    <container id="search">
-        <div></div>
+    <form id="search" method="post">
+        <ul><span class="gray">Tags</span></ul>
         <ul>
-            <h4>Tags</h4>
             <li>Windows-like</li>
             <li>Mac-like</li>
             <li>Nvidia support</li>
@@ -25,9 +29,10 @@
             <li>Beginner-friendly</li>
             <li>Customizable</li>
         </ul>
-    </container>
+        <button id="search-submit">Search</button>
+    </form>
     <main>
-        <h1>Distro Wiki</h1>
+        <h2>Distro Wiki</h2>
         <p>
             I've always hated how disconnected all linux distros
             are. If you are a new user, you find yourself watching
@@ -38,12 +43,14 @@
             description.
         </p>
 
-        <h2>What is a distro?</h3>
+        <h3>What is a distro?</h3>
         <p>
             Think of a distro as a "version" of linux. It's a
             set of pre-set packages and settings that you can
             modify as much as you want.
         </p>
     </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
